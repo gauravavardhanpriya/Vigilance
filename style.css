@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero-section styles - Controls the top header/banner */
+.hero-section {
+    background-color: #050505;
+    padding: 50px;
+    text-align: center;
+    border-bottom: 2px solid red;
+}
+
+/* Main-content styles- Controls the middle secion background */
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 40px;
+    border: 2px solid red;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Heading styles - Controls the main title */
+h1 {
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Panic-button styles - Controls the PANIC ALERT button */
+.panic-button {
+    padding: 50px 80px;
+    color: black;
+    font-family: sans-serif;
+    border-radius: 0px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #990000;
+    cursor: pointer;
+    transition: 0.03s;
+}
+
+/* Makes the Panic-button change colors when hovered over */
+.panic-button:hover {
+    color: white;
+    background-color: red;
+    transform: scale(1.05);
+}
+
+/* Footer settings */
+footer {
+    background-color: #050505;
+    padding: 15px;
+    border-top: 1px solid #1A1A1A;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+/* Styles for the user's actual contants */
+.contacts-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Styles for the specified emergency contacts */
+.contact-card,
+.officials-card {
+    color: white;
+    background-color: #050505;
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stle for the Call Buttons under every emergency contact */
+.call-button {
+    padding: 10px 40px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    border-radius: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.03s;
+    border: 2px solid #444;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Style for the Call Buttons */
+.call-button:hover {
+    color: white;
+    background-color: gray;
+    transform: scale(1.05);
+}
+
+/* Style specifically for the legal authorities*/
+.officials-card {
+    border: 1px solid #0000FF;
+    background-color: #02020a;
+}
+.officials-card h3 {
+    color: #4d4dff;
+}
+
+/* Style for the ADD MORE button */
+.add-more {
+    grid-column: 1 / -1;
+    background-color: transparent;
+    color: #888;
+    border: 3px dashed #444;
+    padding: 20px;
+    margin-top: 1px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.add-more:hover {
+    border-color: white;
+    color: white;
+    background-color: black;
+    transform: scale(1.05);
+}
+
+/* Style for the MASS ALERT button to sent messages to all contacts */
+.prepped-messages {
+    margin-top: auto;
+    padding: 30px;
+    background-color: #050505;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.alert-message {
+    width: 100%;
+    padding: 20px;
+    background-color: #990000;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.alerting {
+    color: #cccccc;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.alert-message:hover {
+    color: black;
+    background-color: silver;
+    transform: scale(1.05);
+}
+
+/* */
+.context{
+    color: #666;
+    font-size: 14px;
+    font-family: monospace;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
